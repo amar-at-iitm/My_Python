@@ -12,14 +12,8 @@ def detect_input_type(a):
         return "str"
     elif isinstance(a, bool):
         return "bool"
-    elif isinstance(a, list):
-        return "list"
-    elif isinstance(a, tuple):
-        return "tuple"
-    elif isinstance(a, dict):
-        return "dict"
-    elif isinstance(a, set):
-        return "set"
+    elif isinstance(a, None):
+        return "None"
     else: 
         return "unknown type"
 
@@ -50,3 +44,4 @@ if __name__ == "__main__":
 
 # # Thanking the user for using the program
 # print("Thank you for using the program!")
+#////////////////////////////////////////////////////////////////////////////////
