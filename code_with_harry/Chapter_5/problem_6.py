@@ -4,7 +4,7 @@
 
 dict = {}
 
-for i in range(1):
+for i in range(4):
     print(f"                   For Friend {i+1}: ")
     name = input( "             Enter Your Name: ")
     lang = input("Enter Your Favourite Language: ")
