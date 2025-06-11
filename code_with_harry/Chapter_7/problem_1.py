@@ -1,5 +1,5 @@
 # Write a program to print multiplication table of a given number using for loop.
-print("This program will print the table of a number")
+print("This program will print the table of a number using \'for loop\' ")
 
 n = int(input("Enter a number: "))
 print(f"Table of {n} is : ")
