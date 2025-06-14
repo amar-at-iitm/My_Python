@@ -4,6 +4,9 @@ Ans: we can prevent the print() function in Python from printing a new line at t
 by using the 'end' parameter. By default, end is set to '\n' (the newline character).
 we can change it to an empty string or any other character we prefer.
 
+print function has the following signature:
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
 """
 print("This is the first part of a line,", end='')
 print("and this is 2nd part of the same line.")
