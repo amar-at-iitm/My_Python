@@ -2,11 +2,18 @@
 
 import os
 
+def rename_file(file_name, new_name="renamed_by_python.txt"):
 
-print("This file will rename the existing '.txt' file")
+    with open(file_name,"w") as f:
+     f.write(f"Renaming old file name '{file_name}' to '{new_name}")
 
-with open("file_to_rename.txt","w") as f:
-    f.write("Renaming old file name 'file_to_rename' to 'renamed_by_python.txt")
+    os.rename("file_to_rename.txt", "renamed_by_python.txt")
+    print(f"The file '{file_name}' is ranamed to '{new_name}' and saved successfully")
 
-os.rename("file_to_rename.txt", "renamed_by_python.txt")
-print("The file 'file_to_rename.txt' is ranamed to 'rename_by_python.txt' and saved successfully")
+
+if __name__=="__main__":
+   
+    print("This programe will rename ta file in existing directory")
+    file_name = input("Eneter the file name: ")
+    new_name = input("Enter the new name(default=renamed_by_python.txt): ")
+    rename_file(file_name, new_name)
